@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+:root{
+    --black : #222;
+    --green : rgb(19, 204, 19) ;
+    --red : rgb(246, 43, 43);
+    --grey : rgb(107, 105, 105);
+    --white : #fff;
+    --bg : #e9ebee ;
+}
+
+
+
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif ;
+}
+
+body {
+
+    background: var(--bg);
+}
+
+.container{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: auto;
+    width: 30%;
+    padding: 20px;
+    margin-top: 150px;
+    text-align: left;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.container:hover{
+    
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+
+
+.container h1 {
+    color: var(--green);
+}
+.container input{
+    padding: 6px 12px ;
+    width: 300px;
+    outline: none;
+    border: 1px solid var(--grey);
+}
+
+.container label{
+    color: var(--black);
+}
+
+.container button{
+    padding: 6px 12px;
+    margin-top: 8px;
+    border: none;
+    background: var(--green);
+    cursor: pointer;
+    font-size: 17px;
+    color: var(--white);
+}
+
+
+span{
+    color: var(--red);
+}
+
+
+.dashboard{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: left;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.dashboard h1 {
+    color: var(--green);
+}
+
+.dashboard table, td, th {
+    margin-top: 20px;
+    border: 1px solid lightgrey;
+    padding: 8px;
+  }
+ .dashboard table {
+    width: 90%;
+    border-collapse: collapse;
+  }
+
+
+.dashboard table tr td a{
+    color: var(--red);
+}
+
+#logout{
+    float: right;
+    padding: 2px 8px;
+    border:none;
+    color: var(--white);
+    background: var(--red);
+    border-radius: 30px;
+}
+
+.error{
+    background: var(--red);
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+
+}
+
+.ok{
+    background: var(--green);
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+
+}
+
+
+
+@media (max-width: 940px) {
+
+    .container{
+      
+        border: 1px solid lightgray;
+        margin: auto;
+        width: 70%;
+        padding: 10px;
+        margin-top: 150px;
+        text-align: left;
+        border-radius: 6px;
+    }
+
+    .dashboard table, td, th {
+        margin-top: 20px;
+        border: 1px solid lightgrey;
+        padding: 8px;
+      }
+     .dashboard table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      
+.dashboard{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: auto;
+    width: 90%;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: left;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+    
+}
